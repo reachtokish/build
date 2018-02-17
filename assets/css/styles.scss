@@ -1,0 +1,127 @@
+@import './bootstrap/scss/bootstrap.scss';
+@import './shared/vars.scss';
+@import './shared/mixins.scss';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import './shared/modules/card.scss';
+@import './shared/modules/note-card.scss';
+@import './shared/modules/material-customization.scss';
+@import './shared/modules/ngb-tab.scss';
+@import './shared/modules/address-anm.scss';
+
+.breadcrumb {
+    padding: 20px 0;
+    background-color: transparent;
+    margin: 0;
+    li {
+        font-size: 18px;
+        font-family: 'rhlight';
+        color: #848484;
+        a {
+            color: #848484;
+            &:hover {
+                color: #000;
+            }
+        }
+        &.active {
+            color: #000;
+        }
+    }
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+    color: #848484;
+}
+
+// datatable styling should be moved from here anywhere else
+.dataTables_length {
+    select {
+        width: 90px;
+        border: solid 1px #CCCCCC;
+        background-color: #fff;
+        height: 35px;
+        border-radius: 5px;
+        padding: 0 10px;
+        font-weight: bold;
+        margin: 0 5px;
+    }
+}
+.dataTables_filter {
+    input {
+        border: solid 1px #CCCCCC;
+        height: 35px;
+        padding: 0 10px;
+        border-radius: 5px;
+    }
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    background: #fff !important;
+    border: solid 1px #FCAF17 !important;
+    padding: 2px 10px !important;
+    color: #ddd !important;
+    &.disabled {
+        color: #E6E6E6 !important;
+        border: solid 1px #E6E6E6 !important;
+    }
+    &:hover {
+        color: #ddd !important;
+    }
+}
+.dataTables_wrapper {
+    td {
+        color: #606060;
+        font-size: 13px;
+        padding: 15px 10px !important;
+    }
+}
+.table-wrapper table tbody tr:nth-child(even) td,
+.table-wrapper table tbody tr td:hover {
+    background-color: #F5F5F5 !important;
+}
+table.dataTable thead th {
+    padding: 15px 10px !important;
+}
+// datatable styling should be moved from here anywhere else
+
+.cdk-overlay-container{z-index: 999999;}
+.modal-dialog{
+    max-width:1200px !important;
+    width: 85%;
+}
+.add_leads {
+    display: inline-block;
+    font-family: 'rhregular';
+    color: #FCAF17;
+    font-size: 15px;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 7px;
+        position: relative;
+        top: -1px;
+        svg {
+            width: 15px;
+            height: 15px;
+            display: block;
+        }
+    }
+}
+
+.interaction_tab {
+    .mat-tab-header {
+        display: none;
+    }
+}
+// history tab css
+
+
+//slider
+
+.irs-line {
+    height: 3px !important;
+}
+.irs-bar {
+    height: 2px !important;
+    background-color: #FCAF17 !important;
+    // background: url("") !important;
+}
